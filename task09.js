@@ -2,32 +2,23 @@
 function vowelCheck(word){
     
     let wordArray = Array.from(word);
-    let vowelArray = ["a,e,i,o,u"];
-    let newArray = ["Vowels: "];
+    let vowelArray = ["a","e","i","o","u"];
+    let vowelUpperArray = ["A","E","I","O","U"];
+    let compareArray = [];
+
+    let newArray = [];
     
+    for (i = 0; i < vowelArray.length; i++){
+        if (wordArray.indexOf(vowelArray[i]) != -1){  
+            newArray.push(" " + vowelArray[i]);
+        }
+        else if (wordArray.indexOf(vowelUpperArray[i]) != -1){  
+            
+            newArray.push(" " + vowelUpperArray[i]);
+        }
+    }
     
-    for (let i = 0; i < wordArray.length; i++){
-    if (wordArray[i] == "a" || wordArray[i] == "A"){   
-        newArray.push("a");
-         
-    }
-    if (wordArray[i] == "e" || wordArray[i] == "E"){
-        newArray.push("e");;
-        
-    }
-    if (wordArray[i] == "i" || wordArray[i] == "I"){
-        newArray.push("i");
-        
-    }
-    if (wordArray[i] == "o" || wordArray[i] == "O"){
-        newArray.push("o");
-       
-    }
-    if (wordArray[i] == "u" || wordArray[i] == "U"){
-        newArray.push("u");
-    }
-}
     let newString = newArray.toString();
-    console.log(newString); 
+    console.log("Vowels: " + newString.toLocaleLowerCase()); 
 }    
-vowelCheck("morning");
+vowelCheck("OzOne");
