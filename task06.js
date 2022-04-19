@@ -1,12 +1,14 @@
 
-function maximumNumber(a,b,c){
-    if (a > b && a > c){
-        console.log(a);
+function maximumNumber(numA,numB,numC){
+    if (numA > numB && numA > numC){
+        return numA;  
     }
-    else if(b > a && b > c){
-        console.log(b);
+    else if(numB > numA && numB > numC){
+        return numB;
     }else{
-        console.log(c);
+        return numC;
     }
 } 
-maximumNumber(11,1,12);
+
+const whichIsTheMax = maximumNumber(1,5,2);
+console.log(whichIsTheMax);
