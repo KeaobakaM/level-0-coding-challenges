@@ -1,8 +1,13 @@
 
 function areaOfTriangle(sidea,sideb,sidec){
-    let area = (.5 * (sidea + sideb + sidec));
-   
-    console.log("The area of the triangle is " + area);
+    const semiperemeter = (1/2 * (sidea + sideb + sidec));
+    const heronform = semiperemeter * (semiperemeter - sidea) * (semiperemeter - sideb) *
+    (semiperemeter - sidec);
+    let area = Math.sqrt(heronform);
+    area = Math.round(area);
+    return area;
     
 } 
-areaOfTriangle(5,8,9);
+
+let calculateArea = areaOfTriangle(8,8,8);
+console.log("The area of the triangle is " + calculateArea + " square units");
