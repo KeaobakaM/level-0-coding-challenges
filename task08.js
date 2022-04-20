@@ -1,8 +1,8 @@
 
 function hoursAndMinutes(time){
-    let total = time / 60;
-    let hours = parseInt(total);                 //so that hours won't give any remainders 
-    let minutes = time % 60;
+    const total = time / 60;
+    const hours = parseInt(total);                 //so that hours won't give any remainders 
+    const minutes = time % 60;
     let hourWord;
     let minuteWord;
 
