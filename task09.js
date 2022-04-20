@@ -1,11 +1,9 @@
 
 function vowelCheck(word){
     
-    let wordArray = Array.from(word);
-    let vowelArray = ["a","e","i","o","u"];
-    let vowelUpperArray = ["A","E","I","O","U"];
-    let compareArray = [];
-
+    const wordArray = Array.from(word);
+    const vowelArray = ["a","e","i","o","u"];
+    const vowelUpperArray = ["A","E","I","O","U"];
     let newArray = [];
     
     for (i = 0; i < vowelArray.length; i++){
