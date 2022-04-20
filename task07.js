@@ -1,11 +1,11 @@
 
 function celciusToFahrenheit(celcius){
-    let fahr = (celcius * 1.8) + 32;
+    const fahr = (celcius * 1.8) + 32;
     return fahr;
 }
 function fahrenheitToCelcius(fahrenheit){
-    let cel = (fahrenheit - 32) * 0.5556;
-    let celRound = Math.round(cel);  // Rounding cel to the nearest integer
+    const cel = (fahrenheit - 32) * 0.5556;
+    const celRound = Math.round(cel);  // Rounding cel to the nearest integer
     return celRound;
 }
 
