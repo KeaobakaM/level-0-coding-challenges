@@ -1,9 +1,9 @@
 
 function commonCharacters(string1, string2){
     
-    let commonCharArray = [];
-    let array1 = Array.from(string1);
-    let array2 = Array.from(string2);
+    const commonCharArray = [];
+    const array1 = Array.from(string1);
+    const array2 = Array.from(string2);
 
     for(i = 0;i < array1.length; i++){
         if (array2.indexOf(array1[i]) != -1){   // -1 means that the element is not there
