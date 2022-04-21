@@ -9,8 +9,8 @@ function fahrenheitToCelcius(fahrenheit){
     return celRound;
 }
 
-const celtofahr = celciusToFahrenheit(5);
-const farhtocel = fahrenheitToCelcius(41);
-console.log(celtofahr + " F");  // testing the code
-console.log(farhtocel + " C");  // testing the code
+const celToFahr = celciusToFahrenheit(5);
+const farhToCel = fahrenheitToCelcius(41);
+console.log(celToFahr + " F");  // testing the code
+console.log(farhToCel + " C");  // testing the code
 
