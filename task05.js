@@ -1,9 +1,9 @@
 
-function areaOfTriangle(sidea,sideb,sidec){
-    const semiperemeter = (1/2 * (sidea + sideb + sidec));
-    const heronform = semiperemeter * (semiperemeter - sidea) * (semiperemeter - sideb) *
-    (semiperemeter - sidec);
-    let area = Math.sqrt(heronform);
+function areaOfTriangle(sideA,sideB,sideC){
+    const semiperemeter = (1/2 * (sideA + sideB + sideC));
+    const heronForm = semiperemeter * (semiperemeter - sideA) * (semiperemeter - sideB) *
+    (semiperemeter - sideC);
+    let area = Math.sqrt(heronForm);
     area = Math.round(area);
     return area;
     
